@@ -9,9 +9,20 @@
 </head>
 <body>
     <div class="game-box">
+        <div><h1>Minesweeper</h1></div>
+        <div class="buttons">
+            <button onclick="gameLevel(1)">Beginner</button>
+            <button onclick="gameLevel(2)">Medium</button>
+            <button onclick="gameLevel(3)">Expert</button>
+        </div>
+        <div id="timer">00:00</div>
         <div class="board-container"></div>
     </div>
+    
 
+    <script src="utils/utils.js"></script>
+    <script src="utils/game.js"></script>
+    <script src="utils/timer.js"></script>
     <script src="main/main.js"></script>
 </body>
 </html>
