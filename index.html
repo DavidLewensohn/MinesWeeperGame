@@ -7,16 +7,41 @@
     <title>minesweeper</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
+
+
 <body>
     <div class="game-box">
+
         <div><h1>Minesweeper</h1></div>
+
+        <div id="timer">00:00</div>
+
+        <img id="faceImg" onclick="startGame()" src="png/natural.png" >
+
+        <div id="lives1">
+            <img  class="heart" src="png/heart.png" >
+
+        
+        </div>
+        <div id="lives2">
+            <img  class="heart" src="png/heart.png" >
+            <img  class="heart" src="png/heart.png" >
+        
+        </div>
+
+        <div id="lives3">
+            <img  class="heart" src="png/heart.png" >
+            <img  class="heart" src="png/heart.png" >
+            <img  class="heart" src="png/heart.png" >
+        </div>
+
+        <div class="board-container"></div>
+
         <div class="buttons">
             <button onclick="gameLevel(1)">Beginner</button>
             <button onclick="gameLevel(2)">Medium</button>
             <button onclick="gameLevel(3)">Expert</button>
         </div>
-        <div id="timer">00:00</div>
-        <div class="board-container"></div>
     </div>
     
 

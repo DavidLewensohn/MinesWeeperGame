@@ -19,13 +19,11 @@ function timerCycle() {
     if (isStopTime == false) {
         sec = parseInt(sec)
         min = parseInt(min)
-
-
         sec = sec + 1
 
         if (sec == 60) {
-            min = min + 1;
-            sec = 0;
+            min = min + 1
+            sec = 0
         }
 
         if (sec < 10 || sec == 0) sec = '0' + sec
@@ -42,5 +40,7 @@ function stopTimer() {
 }
 
 function resetTimer() {
+    min = 0
+    sec = 0
     timer.innerHTML = '00:00'
 }
